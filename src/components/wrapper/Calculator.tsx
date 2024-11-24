@@ -9,8 +9,8 @@ export const Calculator = () => {
 
   return (
     <Card>
-      <CardContent className="p-10 flex">
-        <div className="w-3/5">
+      <CardContent className="p-6 lg:p-10 flex flex-wrap">
+        <div className="w-full lg:w-3/5">
           <div className="grid gap-16">
             <FieldInput
               value={value.amount}
@@ -36,7 +36,7 @@ export const Calculator = () => {
           </div>
           <Result result={result} />
         </div>
-        <div className="w-2/5">
+        <div className="w-full lg:w-2/5 order-1 lg:order-2">
           <Chart data={chartData} />
         </div>
       </CardContent>

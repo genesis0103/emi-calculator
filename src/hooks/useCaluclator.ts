@@ -4,8 +4,8 @@ import { useState } from "react";
 
 export const useCalculator = () => {
   const [value, setValue] = useState<StateType>({
-    amount: 100000,
-    roi: 8,
+    amount: 1000000,
+    roi: 8.5,
     tenure: 20,
   });
 
